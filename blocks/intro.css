@@ -1,0 +1,59 @@
+.intro {
+  margin: 92px auto 0 148px;
+  max-width: 785px;
+  font-size: 24px;
+  line-height: 1.42;
+}
+
+.intro__title {
+  margin: 0;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 1.07;
+}
+
+.intro__subtitle {
+  margin: 40px 0 0;
+  max-width: 720px;
+}
+
+.intro__author {
+  margin: 10px 0 0;
+  max-width: 720px;
+  text-align: right;
+}
+
+.intro__description {
+  margin: 32px 0 0;
+  font-size: 16px;
+  line-height: 1.63;
+  max-width: 720px;
+}
+
+@media screen and (max-width: 1040px) {
+  .intro {
+    margin: 88px auto 0;
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .intro {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .intro {
+    margin-top: 64px;
+    max-width: 288px;
+  }
+  .intro__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
+
+  .intro__subtitle {
+    line-height: 1.25;
+  }
+}

@@ -1,0 +1,125 @@
+.place {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 48px 40px;
+  box-sizing: border-box;
+  margin-bottom: 80px;
+  grid-template-columns: minmax(340px, 460px) minmax(352px, 484px);
+}
+
+.place:last-of-type {
+  margin: 0;
+}
+
+.place__title {
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.06;
+  max-width: 460px;
+  margin: 0;
+}
+
+.place__website {
+  max-width: 465px;
+  align-self: flex-end;
+}
+
+.place__url-heading {
+  color: #aaaaaa;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 12px;
+  line-height: 1.25;
+  margin: 0 0 6px;
+}
+
+.place__url-artist {
+  font-size: 18px;
+  line-height: 1.22;
+  margin: 0;
+}
+
+.place__image {
+  width: 100%;
+}
+
+.place__paragraphs {
+  grid-row: span 2;
+  width: 100%;
+}
+
+.place__paragraph {
+  margin: 25px 0 0;
+  font-size: 18px;
+  line-height: 1.63;
+}
+
+.place__paragraph:first-of-type {
+  margin: 0;
+}
+
+.place__link {
+  box-sizing: border-box;
+  font-weight: 600;
+  max-height: 48px;
+  font-size: 18px;
+  max-width: 248px;
+  line-height: 1.22;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #0278fe;
+  padding: 13px 20px;
+}
+
+.place__link:hover {
+  background-color: #0063d2;
+}
+
+@media screen and (max-width: 1100px) {
+  .place {
+    gap: 46px 28px;
+    grid-template-columns: minmax(1px, 340px) minmax(1px, 352px);
+    margin-bottom: 72px;
+  }
+  .place__title {
+    font-size: 42px;
+    line-height: 1.1;
+    align-self: flex-end;
+  }
+  .place__link:hover {
+    background-color: #0278fe;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .place {
+    gap: 30px;
+    grid-template-columns: minmax(320px, 500px);
+    margin-bottom: 50px;
+    justify-items: center;
+  }
+
+  .place__title {
+    width: 288px;
+    font-size: 32px;
+    line-height: 1.09;
+  }
+  .place__website {
+    padding: 0 16px;
+  }
+  .place__paragraphs {
+    padding: 0 16px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .place__paragraphs {
+    max-width: 288px;
+  }
+  .place__link {
+    width: 288px;
+    max-width: 288px;
+    text-align: center;
+  }
+}
