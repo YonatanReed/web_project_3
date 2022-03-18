@@ -46,6 +46,7 @@
 .place__paragraphs {
   grid-row: span 2;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .place__paragraph {
